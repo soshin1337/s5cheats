@@ -69,6 +69,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 $products = $pdo->query("SELECT * FROM products")->fetchAll(PDO::FETCH_ASSOC);
+foreach ($products as $key => $product) {
+    $stmt = $pdo->prepare("SELECT product_type, COUNT(*) as count FROM product_keys WHERE product_id = ? GROUP BY product_type");
+    $stmt->execute([$product['product_id']]);
+    $keys = $stmt->fetchAll(PDO::FETCH_KEY_PAIR);
+    $products[$key]['day_keys'] = $keys[1] ?? 0;
+    $products[$key]['week_keys'] = $keys[2] ?? 0;
+    $products[$key]['month_keys'] = $keys[3] ?? 0;
+}
 ?>
 
 <!DOCTYPE html>
@@ -123,7 +131,12 @@ $products = $pdo->query("SELECT * FROM products")->fetchAll(PDO::FETCH_ASSOC);
                 <input type="hidden" name="delete" value="<?= htmlspecialchars($product['product_id']) ?>">
                 <button type="submit">Удалить</button>
             </form>
+            <br>
+            Ключей на день: <?= htmlspecialchars($product['day_keys']) ?>,
+            На неделю:  <?= htmlspecialchars($product['week_keys']) ?>,
+            На месяц: <?= htmlspecialchars($product['month_keys']) ?>
         </li>
+        <br>
     <?php endforeach; ?>
     </ul>
 </body>

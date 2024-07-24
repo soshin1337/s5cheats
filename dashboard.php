@@ -95,9 +95,6 @@ $orders = $fetch['orders'];
             </section>
         </div>
     </main>
-    
     <script src="js/dashboard.js"></script>
-
-
 </body>
 </html>
