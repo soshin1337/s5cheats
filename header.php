@@ -1,10 +1,11 @@
 <!-- <script src="https://cdn.jsdelivr.net/gh/wilokecom/google-translate/gtranslate.js"></script> -->
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wilokecom/google-translate/gtranslate.css"> -->
 
-<!-- <div class="gtranslate_wrapper"></div>
-<script>window.gtranslateSettings = {"default_language":"ru","detect_browser_language":true,"languages":["ru","en"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa"}}</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script> -->
-
+<!-- Перевод -->
+<div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"ru","native_language_names":true,"languages":["ru","en","zh-CN"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+<!-- Перевод -->
 
 
 <link rel="shortcut icon" href="/images/favicon.ico" />
@@ -22,13 +23,13 @@
             <a class="support" href="https://t.me/s5cheats_boss" target="_blank"><i class="fa-solid fa-ticket"></i> Поддержка</a>
             <!-- <a class="partner" href="/partnership"><i class="fa-solid fa-crown"></i> Партнерство</a> -->
         </div>
-        <button class="lang-container">
+        <!-- <button class="lang-container">
             <img alt="world" height="20" src="/images/language.svg" width="20">
             <span>eng</span>
-        </button>
+        </button> -->
         <div class="socials">
             <a class="telegram" href="https://t.me/s5cheats_boss" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-            <a class="discord" href=""><i class="fa-brands fa-discord"></i></a>
+            <a class="discord" href="https://discord.gg/5KRZmaMb8k" target="_blank"><i class="fa-brands fa-discord"></i></a>
             <a class="youtube" href=""><i class="fa-brands fa-youtube"></i></a>
             <a style="color: white" href="/dashboard"><i class="fa-solid fa-right-to-bracket"></i> Личный кабинет </a>
         </div>

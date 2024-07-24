@@ -13,6 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $product_id = isset($_POST["product_id"]) ? $_POST["product_id"] : "";
     $product_type = isset($_POST["product_type"]) ? $_POST["product_type"] : "";
 
+    // paypal hardcoded
+    if($payment_method == 'paypal'){
+        header("Location: https://discord.gg/5KRZmaMb8k");
+        die();
+    }
+
     $stmt = $pdo->prepare("SELECT product_name, price_day, price_week, price_month FROM products WHERE product_id = ?");
     $stmt->execute([$product_id]);
     $product = $stmt->fetch(PDO::FETCH_ASSOC);

@@ -15,14 +15,14 @@
             <a class="support" href="https://t.me/s5cheats_boss" target="_blank"><i class="fa-solid fa-ticket"></i> Поддержка</a>
             <!-- <a class="partner" href="/partnership"><i class="fa-solid fa-crown"></i> Партнерство</a> -->
         </div>
-        <button class="lang-container">
+        <!-- <button class="lang-container">
             <img alt="world" height="20" src="/images/language.svg" width="20">
             <span>eng</span>    
-        </button>
+        </button> -->
         
         <div class="socials">
             <a class="telegram" href="https://t.me/s5cheats_boss" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-            <a class="discord" href=""><i class="fa-brands fa-discord"></i></a>
+            <a class="discord" href="https://discord.gg/5KRZmaMb8k" target="_blank"><i class="fa-brands fa-discord"></i></a>
             <a class="youtube" href=""><i class="fa-brands fa-youtube"></i></a>
             <a style="color: white" href="/dashboard"><i class="fa-solid fa-right-to-bracket"></i> Личный кабинет </a>
         </div>

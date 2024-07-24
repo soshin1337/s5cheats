@@ -11,7 +11,7 @@ if (!$product) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,13 @@ if (!$product) {
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <title>s5cheats</title>
 </head>
-<body>
+<body> 
+<!-- Перевод -->
+<div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"ru","native_language_names":true,"languages":["ru","en","zh-CN"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+    <!-- Перевод -->
     <div class="page">
     <div id="navbar"></div>
     

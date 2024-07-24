@@ -30,10 +30,8 @@
             <p class="social-text">Для связи</p>
             <div class="socials-container">
                 <a class="telegram" href="https://t.me/s5cheats_boss" target="_blank"><i class="fa-brands fa-telegram"></i></a>
-                <a class="discord" href=""><i class="fa-brands fa-discord"></i></a>
-                <a class="youtube" href=""><i class="fa-brands fa-youtube"></i></a>
-                
-                
+                <a class="discord" href="https://discord.gg/5KRZmaMb8k"><i class="fa-brands fa-discord"></i></a>
+                <a class="youtube" href=""><i class="fa-brands fa-youtube"></i></a>  
             </div>
         </div>
 </div>

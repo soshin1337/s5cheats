@@ -77,6 +77,10 @@ switch ($product_type) {
                             <img src="images/usdt.png" style="width: 32px" alt="USDT">
                             <span>USDT (0%)</span>
                         </a>
+                        <a href="javascript:void(0);" class="payment-method" data-method="paypal">
+                            <img src="images/pp.png" style="width: 60px" alt="PayPal">
+                            <span>PayPal (Worldwide) (13%)</span>
+                        </a>
                     </div>
                     <input type="hidden" name="payment_method" id="payment_method" value="sbp">
                     <div id="promocode_block" class="form-group">
@@ -102,8 +106,8 @@ switch ($product_type) {
                 </ul>
                 <p class="info-title">Если у вас возникли проблемы или вопросы, а так же вам необходима консультация по читу:</p>
                 <div class="contact-button">
-                <button type="submit" class="contact-btn">Telegram</button>
-                <button type="submit" class="contact-btn">Discord</button>
+                <button type="submit" id="tg" class="contact-btn">Telegram</button>
+                <button type="submit" id="ds" class="contact-btn">Discord</button>
             </div>
         </div>
     </main>
@@ -121,7 +125,15 @@ switch ($product_type) {
         $('.total-amount').html('<b>Итого:</b> ' + newTotal + 'р');
         $('#amount').val(newTotal);
      });
+        document.getElementById('tg').addEventListener('click', function() {
+            window.open('https://t.me/s5cheats_boss', '_blank');
+        });
+        document.getElementById('ds').addEventListener('click', function() {
+            window.open('https://discord.gg/5KRZmaMb8k', '_blank');
+        });
+
     });
+
 </script>
 
 
