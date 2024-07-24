@@ -1,0 +1,124 @@
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 100%;
+    margin-top: auto;
+}
+
+.page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+footer .footer-container {
+    max-width: 1300px;
+    width: 100%;
+}
+
+footer .footer-container .footer-main {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+footer .footer-container .footer-main .logo-info img {
+    height: 70px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    padding-right: 37px;
+    width: 70px;
+}
+
+footer .footer-container .footer-main .logo-info .desc {
+    color: #e0e0e099;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    line-height: 160%;
+}
+
+footer .footer-container .footer-main .logo-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+footer .footer-container .footer-main-block {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer .footer-container .footer-main-block p {
+    color: #828282;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: .012em;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+footer .footer-container .footer-main-block ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.socials-container i {
+    margin-right: 10px;
+    transition: .25s ease all;
+}
+
+.socials-container i:hover {
+    color: #04d0bd;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #e0e0e08f;
+    transition: .25s ease all;
+}
+
+footer a:hover {
+    color: #04d0bd;
+}
+
+.desc {
+    margin-top: auto;
+}
+
+@media (max-width: 480px) {
+    footer .footer-container .footer-main .logo-info .desc {
+        display: none;
+    }
+
+    footer .footer-container {
+        padding: 15px;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+
+    footer {
+        margin-top: -50px;
+        padding-bottom: 30px;
+    }
+}

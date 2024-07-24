@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #171b25;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    max-width: 1000px;
+}
+
+.sidebar {
+    background-color: #2c2c54;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #466ace;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content h1 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.content .user-info {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.content .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.content button {
+    background: #758ed0;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    margin-top: 5px;
+    transition: 0.3s ease-in-out;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background-color: #5a6fbf;
+}
+
+.content .purchased-items {
+    background-color: #2c2c54;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .purchased-items.expanded {
+    overflow-y: auto;
+}
+
+.content .purchased-items h2 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.content .items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto; /* Добавляем вертикальную прокрутку */
+    flex-grow: 1; /* Позволяет списку расти и занимать доступное пространство */
+}
+.content .item-card {
+    color: #ffffff;
+    background-color: #3c3c6c;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.content .item-card:hover {
+    background-color: #4c4c7c;
+    transition: background-color 0.3s ease;
+}
+
+.content .item-card.expanded {
+    background-color: #3c3c6c;
+    transition: background-color 0.3s ease;
+}
+
+.content .item-card .item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info{
+    /* cursor: pointer; */
+}
+
+.content .item-card .purchase-date {
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+
+.empty-message {
+    color: white;
+}
+
+.item-details {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #4c4c7c;
+    cursor: auto;
+}
+
+.item-card.expanded .item-details {
+    display: block;
+}
+
+.loader-button {
+    background: #758ed0;
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.loader-button:hover {
+    background-color: #5a6fbf;
+}
+
+.button-container {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+/* .copy-button {
+    background: none;
+    border: none;
+    color: #758ed0;
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.9rem;
+} */
+
+
+
+@media (max-width: 768px) {
+    .content .purchased-items {
+        max-height: 70vh;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .loader-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .content .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content .actions {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content .actions button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .content .user-info {
+        font-size: 0.9rem;
+    }
+}

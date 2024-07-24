@@ -1,0 +1,152 @@
+a:focus,
+a:active {
+  outline: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a {
+    color: inherit;
+}
+
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #fff;
+  position: relative;
+}
+
+.articles__page-back{
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.articles__page-back:hover{
+  border-radius: 6px;
+  background: hsla(0,0%,100%,.04);
+  transition: .2s;
+}
+.articles__page-back img{
+  width: 20px;
+  height: 20px;
+}
+
+.articles__page-back p{
+  margin-left: 5px;
+  color: #bdbdbd;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .012em;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.articles__body{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.content{
+    margin-right: 100px;
+    max-width: 821px;
+    background: hsla(0,0%,85%,.02);
+}
+.articles__body-img{
+  display: block;
+}
+.articles__body-img img{
+  width: 100%;
+  max-width: 821px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+}
+.articles__body-content{
+  padding: 20px;
+}
+.articles_body-title{
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.articles__body-information{
+  display: flex;
+}
+
+.articles_body-date{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.articles_body-date p {
+  font-size: 15px;
+  color: #bdbdbd;
+}
+.articles_body-date span{
+  margin-left: 12px;
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+.articles__body-text{
+  margin-top: 20px;
+}
+
+.articles__body-text p{
+  margin-top: 20px;
+  font-size: 14px;
+  color: #bdbdbd;
+}
+.articles__body-text img{
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .articles__page-back{
+    top: 12%;
+  }
+
+  .content{
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .articles__page-back{
+    position: absolute;
+    top: 5px;
+    left: 0;
+  }
+
+  .content{
+    margin-top: 50px;
+  }
+
+  .articles_body-title{
+    font-size: 16px;
+  }
+  .articles_body-date p{
+    font-size: 14px;
+  }
+  .articles_body-date p{
+    font-size: 12px;
+  }
+  .articles__body-text img {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,65 @@
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+h1 {
+    /* text-align: center; */
+}
+
+.date {
+    margin-top: 10px;
+    color: #bdbcbc;
+    font-style: italic;
+}
+
+.partnership-section h2 {
+    margin-top: 20px;
+    color: #ffffffd2;
+}
+
+.partnership-section p{
+    margin-top: 10px;
+    color: #bdbcbc;
+    padding-left: 23px;
+}
+
+.partnership-section ul  {
+    margin-top: 10px;
+    padding-left: 50px;
+}
+.partnership-section ul li{
+    margin-top: 10px;
+    color: #bdbcbc;
+}
+.partnership-section ul img{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.05) 0px 5px 15px;
+}
+
+
+.contact-info {
+    margin-top: 40px;
+    color: #bdbcbc;
+}
+
+.additional-info {
+    margin-top: 20px;
+    font-style: italic;
+    color: #bdbcbc;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,170 @@
+@media (max-width: 480px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    nav .nav-container {
+        padding-left: 1cap;
+        padding-right: 15px;
+    }
+
+    nav .nav-container .controls, .socials {
+        display: none;
+    }
+
+    
+
+    .menu {
+        display: block;
+        background-color: #1a1e2bf0;
+        height: 500px;
+        overflow: hidden;
+        transition: transform 0.5s ease-in-out;
+        z-index: 499;
+        position: fixed;
+        width: 100%;
+        opacity: 1;
+    }
+
+    .menu.hidden {
+        transform: translateY(-120%);
+        display: none;
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .menu .menu-container {
+        margin-left: 25px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .menu .menu-container a {
+        text-decoration: none;
+        color: var(--text);
+    }
+
+    .menu .menu-container .partner-menu {
+        color: var(--partner);
+    }
+
+    main img {
+        display: none;
+    }
+
+    main {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 80px;
+    }
+
+    main .main-container h1 {
+        font-size: 50px;
+    }
+
+    .choose .choose-container h1 {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+
+    .choose {
+        margin-top: 50px;
+    }
+
+    .products .products-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .products .products-container .item.more {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .products .products-container .item.rust {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .products .products-container .item.gta {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .products .products-container .item.valorant {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .products .products-container .item.apex {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .products .products-container .item.rust {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .products .products-container .item.dayz {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .products {
+        margin-top: 50px;
+    }
+
+    #toggle-btn {
+        z-index: 500;
+        display: flex;
+    }
+
+    .more-games {
+        margin-bottom: 380px;
+    }
+
+    .advantages .advantages-container {
+        grid-template-columns: 3fr;
+    }
+
+    .advantages-text {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .partner-div .partner-container h1 {
+        text-align: center;
+        font-size: 42.5px;
+    }
+
+
+    .advantages .advantages-container .item {
+        margin-top: 25px;
+    }
+
+    .advantages {
+        margin: 0;
+    }
+    
+    .more-games {
+        width: 100%;
+    }
+
+    .partner-div .partner-container .btn-container {
+        gap: 5px;
+    }
+
+    .partner-div .partner-container .btn-container a {
+        white-space: nowrap;
+    }
+    
+}

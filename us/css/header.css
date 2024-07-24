@@ -1,0 +1,131 @@
+nav {
+    
+    background-color: var(--primary);
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav .nav-container {
+    display: flex;
+    align-items: center;
+    padding-right: 300px;
+    padding-left: 300px;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav .nav-container .logo {
+    width: 60px;
+    height: 60px;
+}
+
+.support {
+    color: #13cfd9;
+}
+
+.products {
+    color: orange;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+nav .nav-container .controls {
+    flex-grow: 1;
+}
+
+nav .nav-container .controls a {
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav .nav-container a {
+    transition: .25s ease all;
+}
+
+nav .nav-container .socials a:hover {
+    color: #13cfd9;
+}
+
+nav .nav-container .controls .partner {
+    color: var(--partner);
+}
+
+nav .nav-container .socials i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav .nav-container .controls .products {
+    margin-left: 40px;
+}
+
+.menu .menu-container a {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    nav .nav-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    nav .nav-container .controls, .socials {
+        display: none;
+    }
+
+    .menu .menu-container a {
+        display: block;
+    }
+
+    .menu {
+        background-color: #1a1e2bf0;
+        overflow: hidden;
+        max-height: 0;
+        z-index: 9999;
+        position: fixed;
+        width: 100%;
+        opacity: 0;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        height: 100%;
+    }
+    
+    .menu.visible {
+        max-height: 500px;
+        opacity: 1;
+        display: block;
+    }
+
+
+
+    .burger {
+        display: block;
+    }
+
+    .menu .menu-container {
+        margin-left: 25px;
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    .menu .menu-container a {
+        text-decoration: none;
+        color: var(--text);
+    }
+
+    .menu .menu-container .partner-menu {
+        color: var(--partner);
+    }
+}
+

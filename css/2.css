@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body, html {
+    background-color: #0d0d2b; /* Темный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-container {
+    background-color: #1c1c3c; /* Темный фон контейнера */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h1 {
+    color: #ffffff; /* Белый текст */
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container input {
+    background: #2c2c54; /* Темный фон полей ввода */
+    border: none;
+    border-radius: 8px;
+    color: #ffffff; /* Белый текст */
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.login-container input::placeholder {
+    color: #bdbdbd; /* Светлый текст для placeholder */
+}
+
+.login-container button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7d5fff; /* Фиолетовый фон кнопки */
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    line-height: 2;
+    transition: 0.3s ease-in-out;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #ffffff; /* Белый текст на кнопке */
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #5a3fff; /* Темный фиолетовый фон кнопки при наведении */
+}
+
+.login-container .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.login-container .links a {
+    color: #7d5fff; /* Цвет ссылок */
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: 600;
+}
+
+.login-container .links a:hover {
+    color: #5a3fff; /* Цвет ссылок при наведении */
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 575.98px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-container button {
+        padding: 0.5rem 1rem;
+        font-size: 0.65rem;
+    }
+
+    .login-container input {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

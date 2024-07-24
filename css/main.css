@@ -1,0 +1,460 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--bg);
+    height: 100%
+}
+
+main {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-grow: 1;
+}
+
+main .category-text {
+    color: var(--text);
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+main .main-container .caregories {
+    margin-top: 25px;
+    display: block;
+}
+
+main .main-container .caregories .item.white {
+    color: #1d1d1d;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid #fff;
+}
+
+main .main-container .caregories .item.white:hover {
+    background-color: white;
+    color: #1d1d1d;
+}
+
+main .main-container .caregories .item {
+    font-weight: 600;
+    font-size: .9rem;
+    text-decoration: none;
+    border: 2px solid var(--border);
+    border-radius: 50px;
+    padding: 8px 15px;
+    color: var(--text);
+    transition: .3s ease all;
+}
+
+main .main-container .caregories .item:hover {
+    background-color: #232a3a;
+    color: #fff;
+}
+
+.next {
+    margin-top: 30px;
+}
+
+.choose {
+    width: 100%;
+    height: 140px;
+    background-color: #222837;
+    display: flex;
+    align-items: center;
+}
+
+.choose .choose-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.choose .choose-container h1 {
+    color: #f4f4f4;
+    font-size: 36px;
+}
+
+.choose .choose-container h1 span {
+    background: linear-gradient(180deg, #758ed0 0%, #7f88a1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.products {
+    margin: auto;
+    max-width: 1300px;
+    margin-top: 100px;
+}
+
+.products .products-container {
+    display: grid;
+    margin: auto;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.products .products-container .item {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease all;
+    width: 400px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.products .products-container .item.dayz {
+    background-image: url(images/dayz.png);
+}
+
+.products .products-container .item.apex {
+    background-image: url(images/apex-banner.png);
+}
+
+.products .products-container .item.valorant {
+    background-image: url(images/valorant-banner.png);
+}
+
+.products .products-container .item.gta {
+    background-image: url(images/gta-banner.png);
+}
+
+.products .products-container .item.rust {
+    background-image: url(images/rust-banner.png);
+}
+
+.products .products-container .item.more {
+    background-image: url(images/more.png);
+}
+
+.products .products-container .item.more a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.products .products-container .item:hover {
+    box-shadow: 0px 0px 30px var(--shadow);
+}
+
+.products .products-container .item .item-img {
+    backdrop-filter: blur(8px);
+    background: rgba(20,16,28,.48);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.more-games {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.more-games .more-container .more-text {
+    background: linear-gradient(180deg, #758ed0 0%, #7f88a1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+}
+
+.more-games .more-container {
+    text-align: center;
+}
+
+.more-games .more-container h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.more-games .more-container a {
+    text-decoration: none;
+    color: #1d1d1d;
+    background-color: #fff;
+    font-weight: 500;
+    padding: 20px 40px;
+    border-radius: 10px;
+    position: relative;
+    top: 40px;
+    transition: .4s ease all;
+    display: inline-block;
+}
+
+.more-games .more-container a:hover {
+    background-color: #13cfd9;
+    color: #fff;
+}
+
+.advantages {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.advantages-text {
+    font-size: 50px;
+    color: #e0e0e0;
+    letter-spacing: .02em;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.advantages .advantages-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.advantages .advantages-container .item {
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: .25s ease all;
+}
+
+.advantages .advantages-container .item .icon {
+    font-size: 28px;
+}
+
+.advantages .advantages-container .item .quality,
+.advantages .advantages-container .item .price,
+.advantages .advantages-container .item .gear {
+    padding: 16px;
+    border-radius: 100%;
+    transition: .25s ease all;
+    cursor: pointer;
+    width: 60px;
+    display: inline-block;
+}
+
+.advantages .advantages-container .item .quality {
+    color: rgb(205, 135, 6);
+    background-color: rgba(205, 135, 6, 0.243);
+}
+
+.advantages .advantages-container .item .quality:hover {
+    background-color: rgba(205, 135, 6, 0.329);
+    transform: rotate(360deg);
+    box-shadow: 1px 1px 7px rgba(205, 135, 6, 0.329);
+}
+
+.advantages .advantages-container .item .price {
+    color: rgb(70, 189, 37);
+    background-color: rgba(45, 194, 22, 0.243);
+}
+
+.advantages .advantages-container .item .price:hover {
+    background-color: rgba(33, 222, 26, 0.329);
+    transform: rotate(360deg);
+    box-shadow: 1px 1px 7px rgba(55, 214, 7, 0.329);
+}
+
+.advantages .advantages-container .item .gear {
+    color: rgb(37, 189, 164);
+    background-color: rgba(22, 194, 180, 0.243);
+}
+
+.advantages .advantages-container .item .gear:hover {
+    background-color: rgba(19, 231, 224, 0.329);
+    transform: rotate(360deg);
+    box-shadow: 1px 1px 7px rgba(7, 214, 210, 0.329);
+}
+
+.advantages .advantages-container .item .title {
+    font-size: 18px;
+    color: #e0e0e0;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.advantages .advantages-container .item .title-desc {
+    color: #b9b9b9;
+}
+
+.partner-div {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.partner-div .partner-container h1 {
+    font-size: 50px;
+    color: #e0e0e0;
+    letter-spacing: .02em;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.partner-div .partner-container p {
+    font-size: 14px;
+    color: #e0e0e0;
+    letter-spacing: .02em;
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.partner-div .partner-container .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.partner-div .partner-container .btn-container .resellers,
+.partner-div .partner-container .btn-container .developers {
+    padding: 20px;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 400;
+    border-radius: 8px;
+    transition: .25s ease all;
+}
+
+.partner-div .partner-container .btn-container .resellers {
+    background-color: #0dbbc5;
+}
+
+.partner-div .partner-container .btn-container .resellers:hover {
+    background-color: #13cfd9;
+}
+
+.partner-div .partner-container .btn-container .developers {
+    background-color: #22c50d;
+}
+
+.partner-div .partner-container .btn-container .developers:hover {
+    background-color: #28e90f;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1300px) {
+    main, .choose .choose-container, .products, .more-games, .advantages, .partner-div {
+        max-width: 95%;
+        padding: 0 15px;
+    }
+
+    .products .products-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .products .products-container .item {
+        width: 400px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .more-games {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .products .products-container {
+        grid-template-columns: 1fr;
+    }
+
+    .choose .choose-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .choose .choose-container h1 {
+        font-size: 28px;
+    }
+
+    .more-games .more-container h1 {
+        font-size: 32px;
+    }
+
+    .advantages-text {
+        font-size: 36px;
+    }
+
+    .partner-div .partner-container h1 {
+        font-size: 36px;
+    }
+
+    .partner-div .partner-container p {
+        max-width: 100%;
+    }
+
+    .partner-div .partner-container .btn-container {
+        flex-direction: column;
+    }
+
+    .partner-div .partner-container .btn-container .resellers,
+    .partner-div .partner-container .btn-container .developers {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .advantages .advantages-container {
+        grid-template-columns: 1fr;
+    }
+
+    .more-games .more-container a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 468px) {
+    .products .products-container .item {
+        width: 100%;
+        height: 180px;
+    }
+
+    footer .footer-container {
+        margin-top: -250px;
+    }
+}
+
+@media (max-width: 320px) {
+    .choose .choose-container h1 {
+        font-size: 24px;
+    }
+
+    .more-games .more-container h1 {
+        font-size: 28px;
+    }
+
+    .advantages-text {
+        font-size: 32px;
+    }
+
+    .partner-div .partner-container h1 {
+        font-size: 32px;
+    }
+}

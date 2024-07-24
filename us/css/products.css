@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--bg);
+    min-height: 100%;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1300px;
+    margin-top: 150px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: #f4f4f4;
+}
+
+main h1 span {
+    background: linear-gradient(180deg, #758ed0 0%, #7f88a1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.products {
+    margin: auto;
+    max-width: 1300px;
+    margin-top: 100px;
+}
+
+.products .products-container {
+    display: grid;
+    margin: auto;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.products .products-container .item.dayz {
+    background: url(images/dayz.png);
+    width: 400px;
+    height: 200px;
+}
+
+.products .products-container .item.apex {
+    background: url(images/apex-banner.png);
+    width: 400px;
+    height: 200px;
+}
+
+.products .products-container .item.valorant {
+    background: url(images/valorant-banner.png);
+    width: 400px;
+    height: 200px;
+}
+
+.products .products-container .item.gta {
+    background: url(images/gta-banner.png);
+    width: 400px;
+    height: 200px;
+}
+.products .products-container .item.rust {
+    background: url(images/rust-banner.png);
+    width: 400px;
+    height: 200px;
+}
+.products .products-container .item.cs2 {
+    background: url(images/cs2-banner.png);
+    width: 400px;
+    height: 200px;
+}
+
+.products .products-container .item.battlefield {
+    background: url(images/battlefield-banner.png);
+    width: 400px;
+    height: 200px;
+}
+
+.products .products-container .item.stalcraft {
+    background: url(images/stalcraft-banner.png);
+    width: 400px;
+    height: 200px;
+}
+
+.products .products-container .item.warzone {
+    background: url(images/warzone-banner.png);
+    width: 400px;
+    height: 200px;
+}
+
+.products .products-container .item.dota2 {
+    background: url(images/dota2-banner.png);
+    width: 400px;
+    height: 200px;
+}
+
+.products .products-container .item.warface {
+    background: url(images/warface-banner.png);
+    width: 400px;
+    height: 200px;
+}
+
+.products .products-container .item.escape {
+    background: url(images/escape-banner.png);
+    width: 400px;
+    height: 200px;
+}
+
+.products .products-container .item {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease all;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.products .products-container .item img {
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.products .products-container .item .item-img {
+    position: absolute;
+    backdrop-filter: blur(8px);
+    background: rgba(20, 16, 28, .48);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search h1, .dont {
+    text-align: center;
+}
+
+.search p {
+    color: var(--text);
+    margin-bottom: 2%;
+    font-weight: 500;
+}
+
+.search input {
+    outline: none;
+    border: .5px solid #758dd02d;
+    padding: 25px;
+    width: 70%;
+    border-radius: 10px;
+    background-color: var(--shadow);
+    color: #f4f4f4;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .3s ease all;
+}
+
+.search input::placeholder {
+    color: #f4f4f460;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.search input:focus {
+    border-color: #758ed0;
+}
+
+@media (max-width: 480px) {
+    .products .products-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .products .products-container .item.apex {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .products .products-container .item.valorant {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .products .products-container .item.dayz {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .products .products-container .item.gta {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .products .products-container .item.rust {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .products .products-container .item.cs2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+    .products .products-container .item.battlefield {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .products .products-container .item.stalcraft {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+    .products .products-container .item.warface {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .products .products-container .item.warzone {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+    .products .products-container .item.dota2 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    .search input {
+        width: 95%;
+        margin-top: 10px;
+    }
+}

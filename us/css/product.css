@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--bg);
+    min-height: 100vh;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1300px;
+    margin-top: 70px;
+}
+
+main .gameplay {
+    width: 310px;
+    height: 442px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+main .gameplay-container {
+    display: block;
+}
+
+main { 
+    display: flex;
+}
+
+main .cheat-container {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+main .cheat-container .cheat-name {
+    font-size: 40px;
+    color: #e0e0e0;
+    font-weight: 800;
+    letter-spacing: .012em;
+}
+
+main .cheat-container .game-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background: hsla(0,0%,100%,.04);
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: #ffffff75;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .25s ease all;
+    cursor: pointer;
+}
+
+main .cheat-container .game-icon img {
+    width: 30px;
+}
+
+main .cheat-container .game-icon:hover {
+    background: hsla(0, 0%, 100%, 0.075);
+}
+
+main .cheat-container .undetect-icon {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    background: rgba(72, 183, 128, 0.063);
+    color: rgb(72, 183, 128);
+    font-size: 13px;
+    font-weight: 500;
+    transition: .25s ease all;
+    padding: 11px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+main .cheat-container .undetect-icon:hover {
+    background: rgba(71, 252, 162, 0.063);
+}
+
+main .cheat-container .icons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+main .cheat-container .cheat-desc {
+    max-width: 100%;
+    color: #bdbdbdad;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .02em;
+    word-break: break-word;
+    margin-top: 20px;
+    border-bottom: 1px solid hsla(0,0%,100%,.04);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+main .cheat-container .default-functions {
+    color: #bdbdbdad;
+    font-size: 14px;
+    padding-top: 14px;
+}
+
+main .cheat-container .cheat-functions .functions {
+    display: flex;
+    gap: 14px;
+    margin-top: 10px;
+    border-bottom: 1px solid hsla(0,0%,100%,.04);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    max-width: 100%;
+}
+
+main .cheat-container .cheat-functions .functions .aimbot, .players, .misc {
+    align-items: center;
+    background: hsla(0,0%,100%,.02);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    padding: 9px 12px;
+    width: -moz-max-content;
+    width: max-content;
+    color: #a6a6a6;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .25s ease all;
+}
+
+main .cheat-container .cheat-functions .functions .aimbot .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: rgba(255, 166, 0, 0.443);
+}
+
+main .cheat-container .cheat-functions .functions .players .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: rgba(255, 0, 0, 0.532);
+}
+
+main .cheat-container .cheat-functions .functions .misc .circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: rgba(0, 128, 0, 0.41);
+}
+
+.pay {
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background: linear-gradient(180deg,rgba(101,109,215,.08),rgba(4,208,189,.08));
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 20px;
+    height: -moz-min-content;
+    height: min-content;
+    padding: 28px;
+    width: 420px;
+}
+
+
+.pay .pay-container .btn {
+    align-items: center;
+    background: none;
+    border: 2px solid hsla(0,0%,100%,.08);
+    border-radius: 999px;
+    color: #f2f2f280;
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    font-weight: 600;
+    gap: 6px;
+    justify-content: center;
+    letter-spacing: .012em;
+    line-height: 20px;
+    padding: 8px 16px;
+    transition: .2s ease all;
+    white-space: nowrap;
+    text-decoration: none;
+    margin-right: 7px;
+}
+
+.pay .pay-container .choose {
+    color: #d1d1d1b3;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.pay .pay-container .btn:hover {
+    background-color: #fff;
+    color: #202020;
+}
+
+.pay .pay-container .btn.active {
+    background-color: #fff;
+    color: #202020;
+}
+
+.pay .pay-container .buy-buttons {
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsla(0,0%,100%,.04);
+    margin-top: 10px;
+}
+
+.pay .pay-container .buy-container {
+    padding-top: 20px;
+}
+
+.pay .pay-container .buy-container .price {
+    color: #e0e0e0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: .02em;
+}
+
+.pay .pay-container .buy-container .price .days {
+    color: #e0e0e080;
+}
+
+.pay .pay-container .buy-container {
+    width: 100%;
+}
+
+.pay .pay-container .buy-container .buy {
+    background: #04d0bd;
+    color: #131519;
+    transition: .2s;
+    padding: 20px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.pay .pay-container .buy-container .buy:hover {
+    background: #06e4ce;
+}
+
+.reseller {
+    align-items: center;
+    background: rgba(209,141,78,.04);
+    border-radius: 6px;
+    color: #d18d4e;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 12px;
+    line-height: 20px;
+    padding: 16px;
+    width: 100%;
+}
+
+.reseller i {
+    margin-right: 5px;
+}
+
+.characteristic {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.characteristic .characteristic-container {
+    display: flex;
+    gap: 15px;
+}
+
+.screenshots {
+    margin: 0 auto;
+    max-width: 1300px;
+    margin-top: 35px;
+}
+
+.screenshots .screenshots-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    gap: 15px;
+}
+
+.screenshots .screenshots-container img {
+    width: 100%;
+    border-radius: 15px;
+    transition: .25s ease all;
+}
+
+.screenshots .screenshots-container img:hover {
+    transform: scale(1.05);
+}
+
+.screenshots h1 {
+    font-size: 30px;
+    color: #e0e0e0;
+    letter-spacing: .02em;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+
+
+@media (max-width: 768px){
+    main {
+        display: block;
+        margin-top: 60px;
+    }
+
+    .gameplay-container {
+        text-align: center;
+    }
+
+    .pay {
+        width: 85%;
+        margin-left: 34px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .reseller {
+        width: 100%;
+    }
+
+    main .cheat-container .cheat-name {
+        margin-top: 15px;
+    }
+
+    main .gameplay {
+        width: 85%;
+    }
+
+    .screenshots .screenshots-container {
+        margin-left: 15px;
+        margin-right: 15px;
+        grid-template-columns: 1fr;
+    }
+}
